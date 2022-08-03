@@ -1,0 +1,158 @@
+{
+  "settings": {
+    "name": "Pancakeswapexchange",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/il-340x270.3326104994-m82a.jpg",
+    "mbrsiteDomain": "kalxpjbe3e",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.6.11"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Pancakeswap | Pancakeswap Exchange | Official Site",
+        "meta_descr": "Home | PancakeSwap - $10.952 The moon is made of pancakes. Trade, earn, and win crypto on the most popular decentralized platform in the galaxy. Connect Wallet Used by millions. Trusted with billions. PancakeSwap has the most users of any decentralized platform, ever. And those users are now entrusting the platform with over $12 billion in funds.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/pancakeswap-finance.png\" alt=\"pancakeswap exchange\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tdqCJvatqb",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image3-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background7.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Pancakeswap | Pancakeswap Exchange | Official Site</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">PancakeSwap Exchange is the main DEX on BNB Smart Chain. It permits clients to exchange and procure an assortment of BEP-20 coins through their Automated Market Maker (AMM) based trade. Sent off in September 2020, Pancake Swap has become truly a sensation in the De-Fi world, acquiring notoriety quickly over the recent years. In this article, we cover how to get everything rolling utilizing Pancake Swap and the means you can take to begin utilizing Pancake Swap in a matter of moments.\n<br>\n<br>How to download PancakeSwap Login?\n<br>\n<br>Right now, there isn't an application or web expansion accessible for Pancake Swap. Likewise, as a decentralized stage, there is compelling reason need to make a record with Pancake Swap, you essentially have to explore to their site and interface your picked crypto wallet. In this way, the main thing you really want to download to utilize PancakeSwap Exchange is your wallet application or web augmentation, contingent upon the crypto wallet you pick.\n<br>Here you can track down a bit by bit guide on the most proficient method to interface your Trust Wallet to Pancake Swap.\n<br>\n<br>How to interface MetaMask to Pancake Swap Exchange?\n<br>\n<br>MetaMask is one of the more famous crypto wallets that is utilized to exchange on Pancake Swap. MetaMask is an internet browser expansion that is upheld on Chrome, Firefox, Brave, and Edge. Here is a bit by bit guide on the most proficient method to interface MetaMask to Pancake Swap:\n<br>On the off chance that you haven't as of now, download MetaMask from its true download page by adding the MetaMask as an internet browser expansion.\n<br>Open the MetaMask expansion. On the upper right corner, click on the organization selector. Naturally, it will show \"Ethereum Mainnet\".\n<br>\n<br>Click \"Add Network\".\n<br>\n<br>Type in the subtleties underneath\n<br>\n<br>Network Name: BNB Smart Chain\n<br>\n<br>New RPC URL: https://bsc-dataseed.binance.org\n<br>\n<br>Chain ID: 56\n<br>\n<br>Money Symbol: BNB\n<br>\n<br>Block Explorer URL (discretionary): http://bscscan.com\n<br>\n<br>Ensure what you composed matches the abovementioned, then click \"Save\". You ought to now see a notice saying \"BNB Smart Chain\" was effectively added!\", and \"BNB Smart Chain\" is currently the chosen network choice.\n<br>\n<br>Explore to the PancakeSwap Exchange site in your program. On the upper right corner, select \"Interface\", then, at that point, select Metamask.\n<br>Another window will spring up for approval. Confirm that the right record is chosen to be associated, then select \"Next\" to proceed. Select \"Interface\"\n<br>The popup window will vanish once the association is affirmed. You are currently good to go!\n<br>\n<br>How to exchange on PancakeSwap Exchange Login?\n<br>\n<br>Whenever you've set up and associated your wallet, exchanging or trading tokens on Pancake Swap is extremely straightforward. Trading on Pancake Swap includes exchanging one BEP-20 token for another through their robotized liquidity pools. Remember that since you're simply ready to exchange tokens with different tokens, you're not ready to straightforwardly purchase cryptographic money utilizing a customary cash by means of Pancake Swap. You would initially have to buy your digital money tokens somewhere else and add them to your crypto wallet. Ensure you additionally buy or hold some BNB which will go towards exchange/gas charges.\n<br>When you have enough BEP-20 tokens in your wallet, you're prepared to begin. This is the way to exchange and trade:\n<br>\n<br>1. Go to the Pancake Swap Exchange page\n<br>Explore to the Pancake Swap site. In the upper left corner you ought to see 'Exchange.' Click on that to be coordinated to the 'Trade' page. This is where you'll complete your trade.\n<br>\n<br>2. Pick the symbolic you need to trade\n<br>On the Swap page, you'll see a little trade mini-computer on the right. Involving the drop-down menu in the top area, you can pick the coin you might want to trade.\n<br>\n<br>3. Pick the symbolic you need to exchange to.\n<br>Utilizing this equivalent mini-computer, utilize the drop-down menu in the base segment to pick the coin you need to exchange to.\n<br>\n<br>4. Enter the sum\n<br>You can enter either the quantity of coins you need to get or the quantity of coins you wish to trade. When you enter a sum into one of the fields, the other field will be determined for you naturally. A little breakdown will likewise show up beneath the mini-computer.\n<br>\n<br>5. Audit the subtleties and snap 'Trade'\n<br>Whenever you've ensured that every one of the sums are right and that you're content with the expenses and slippage resilience, you can affirm that Swap.\n<br>\n<br>6. You're finished!\n<br>You've quite recently purchased your most memorable tokens utilizing Pancake Swap! https://pncakeswap.finance A window will spring up telling you that the exchange was submitted, and it'll likewise show you a convenient connection where you can see your exchange subtleties on BscScan.\n<br>\n<br>How to get Pancake Swap (CAKE)?\n<br>\n<br>CAKE is a BEP-20 symbolic that is integral to Pancake Swap's foundation. As PancakeSwap Exchange local administration token, CAKE can be utilized across Pancake Swap's all's items, with the expansion of having the option to make and decide on administration recommendations through the stage's local area administration gateway.\n<br>You can purchase CAKE on the Pancake Swap trade utilizing the means spread out in the part above. Simply try to choose CAKE as the symbolic you wish to exchange to, then, at that point, you'll have the option to get CAKE in return for a BEP-20 badge of your decision. For instance, you could utilize a token, for example, BUSD, which is a USD-designated stablecoin, to purchase CAKE through Pancake Swap's trade.\n<br>\n<br>Assuming you need more CAKE than the sum you purchased, you're likewise ready to procure extra CAKE from Pancake Swap by marking your tokens in homesteads or syrup pools. These will regularly remunerate clients with extra CAKE as a trade-off for them securing their tokens for a specific period.\n<br>\n<br>You ought to now be more acquainted with how to get everything rolling utilizing Pancake Swap, how to get your wallet associated, and how to exchange tokens through their AMM-based trade. In any case, Pancake Swap likewise offers different other fascinating items, for example, Syrup Pools, Farms, NFT commercial centers, and Lotteries which keep clients getting back to the stage a large number of days. Try to look at those and be watching out for HI, which is accessible for trade on Pancake Swap.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a>\n                    <a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Live Demos &gt;</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tdqCKbUbmN",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header2-1"
+        }
+      ]
+    }
+  }
+}
